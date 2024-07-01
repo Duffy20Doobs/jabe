@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    </head>
+<body>
+ <div class="background" >
+    <form action="#">
+    <div class="text">
+        <div class="FEU">
+            <a href="https://feudiliman.edu.ph/" class="feu">FEU DILIMAN</a>
+        </div>
+        <div class="header">
+            <div class= "container">
+            <label class="first"><b>User Name</b> </label>
+            <input type="text" placeholder="Enter User Name"  required>.
+            </div>
+            <div class="container">
+            <label class="first"><b>Password</b> </label>
+            <input type="text" placeholder="Enter First Name" required >
+            </div>
+        </div>
+        <div class="stay">
+            <input type="radio" name="dot" id="dot">
+            <label for="dot">
+                <span class="dot"></span>
+                <span class="sign">Stay signed in</span>
+            </label>
+        </div>
+        <div class="fp">
+            <a href="Forgotpassword.com" class="fp2">Forgot Password?
+            <a href="https://students.feudiliman.edu.ph/"><input type="button" value="sign in"></a>
+            </a>
+        </div>
+        <div class="footer">
+            <img src="https://spng.hippopng.com/20190621/soi/kisspng-user-profile-computer-icons-transparency-clip-art-huawei-mobile-cloud-5d0d1542a1b629.4377697015611384986624.jpg" class="img"><a href="https://account.microsoft.com/account" class="log">Login With Microsoft</img></a>
+        </div>
+        <div class="Lfooter">
+            <a href="https://feudiliman.edu.ph/" class="lf">Help</a>
+            <a href="https://fareasternuniversity.my.salesforce-sites.com/leadform"class="lf">Privacy Policy</a>
+            <a href="https://fareasternuniversity.my.salesforce-sites.com/leadform"class="lf">Acceptable use Policy</a>
+            <a href="https://www.facebook.com/FEUDiliman"class="lf">Facebook</a>
+            <a href="https://twitter.com/feudiliman?lang=en"class="li">Twitter</a>
+        </div>
+    </div>
+</form>
+</div>
+</body>
+    <style>
+        .background {
+            background: url("feu_image.jpg");
+            background-size: cover;
+            height: 98vh;
+            width: 190vh;
+            background-repeat: no-repeat;
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+        }
+        .text{
+            width: 100%;
+            max-width: 500px;
+            background-color: rgba(55, 104, 55, 0.5);
+            border-radius: 5px;
+            padding: 60px 55px;
+        }
+        .first{
+            margin: 1px;
+            height: 20px;
+            width: 100%;
+            color: rgb(247, 247, 247);
+        }
+        input[type="text"]
+        {   
+            flex: wrap;
+            padding: 10px;
+            justify-content: space-between;
+            height: 20px;
+            width: 90%;
+        }
+        input[type="radio"]{
+            display: none;
+        }
+        .container {
+            flex-wrap: wrap;
+            padding: 20px;
+            display: block;
+            margin: 20px 0 20px 0;
+        }
+        .stay label{
+            width: 23%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-left: 23px;
+            margin-top: -10px;
+            color: white;
+        }
+        .dot{
+            height: 3px;
+            width: 3px;
+            background: rgb(252, 248, 248);
+            border: 3px solid transparent;
+            align-items: center;
+            position: relative;
+            margin-right: 3px;
+        }
+        .dot::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            background: #000; 
+            transition: width 0.3s, height 0.3s; 
+        }
+        .stay #dot:checked ~ label .dot::before {
+            width: 100%;
+            height: 100%;
+
+        }
+         input[type="button"] {
+            background-color: #236827; 
+            padding: 10px 35px; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            margin-left: 330px;
+            outline: none;
+            margin-top: -36px;
+            float: left;
+        }
+        input[type="button"]:hover {
+            background-color: #6092ca; 
+        }
+        .fp2{
+            float: left; 
+            margin-left: 23px;
+            text-decoration-color: rgb(255, 255, 255);
+            color: rgb(245, 245, 245);
+        }
+        .img{
+            height: 2vh;
+            margin-right: 2px;
+            margin-top: 20px;
+            border-radius: 20%;
+
+        }
+        .footer{
+            margin-left: 170px;
+            color: white;
+        }
+        .Lfooter {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+        .Lfooter .lf {
+            margin: 0 10px;
+            color: #FFFFFF!important;
+        }
+        .li{
+            color: white;
+        }
+        .FEU {
+            font-size: 24px;
+            font-weight: bold;
+            color: #f3f1f1;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .feu{
+            color: white;
+        }
+        .log{
+            color: white;
+        }
+
+        
+
+</style>
